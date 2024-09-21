@@ -1,0 +1,114 @@
+.hash{
+    padding: 0 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(200px, 1fr));
+     /* 3 equal columns */
+    
+    row-gap: 2vw;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(5vw, 1fr)); /* Smaller column size for small screens */
+        
+    }
+    .hash{
+        padding: 0 3vw 0 3vw;
+
+    }
+}
+
+
+select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+}
+
+/* Create a container around the select */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+/* Add the custom text "Select" where the arrow would be */
+.custom-select::after {
+    content: "Select"; /* Replace this with any text */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent click on the text */
+    font-size: 14px;
+    color: #999;
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(200px, 1fr));
+     /* 3 equal columns */
+    
+    row-gap: 2vw;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(5vw, 1fr)); /* Smaller column size for small screens */
+        
+    }
+    .hash{
+        padding: 0 3vw 0 3vw;
+
+    }
+}
+
+.button{
+    margin: 1vw 42vw;
+}
+
+select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+}
+
+/* Create a container around the select */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+/* Add the custom text "Select" where the arrow would be */
+.custom-select::after {
+    content: "Select"; /* Replace this with any text */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent click on the text */
+    font-size: 14px;
+    color: #999;
+}
